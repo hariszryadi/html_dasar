@@ -4,7 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contoh CSS</title>
-    <link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			display: flex;                /* Mengaktifkan Flexbox */
+			flex-direction: column;       /* Mengatur elemen dalam kolom */
+			justify-content: center;      /* Mengatur posisi horizontal ke tengah */
+			align-items: center;          /* Mengatur posisi vertikal ke tengah */
+			height: 100vh;               /* Menggunakan tinggi viewport */
+			margin: 0;                   /* Menghilangkan margin default */
+			background-color: #54b739af;   /* Warna latar belakang */
+		}
+		table {
+			width: 40%;                   /* Lebar tabel */
+			background-color: #bff9afaf;      /* Warna latar belakang tabel */
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Bayangan tabel */
+		}
+		#box-image {
+			display: flex; /* Mengaktifkan Flexbox */
+			justify-content: center; /* Mengatur posisi horizontal */
+			align-items: center; /* Mengatur posisi vertikal */
+			margin-bottom: 20px; /* Jarak antara gambar dan tabel */
+		}
+		img {
+			border: 5px solid #ddd; /* Menambahkan border */
+			border-radius: 15px;    /* Sudut membulat */
+			padding: 6px;          /* Ruang di sekitar gambar */
+			width: 250px; 
+			height: auto;           /* Mengatur tinggi otomatis */
+		}
+
+		#submit {
+			width: 200px;
+			padding: 5px 30px;
+			margin-top: 20px;
+			border: 1px #000 solid;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
 </head>
 <body>
     <div id="box-image">
@@ -39,31 +76,10 @@
     </table>
     <button id="submit" onclick="profile();">Simpan</button>
 
-    <!-- <button id="myButton">Click me</button>
-
-    <button onclick="alert('Button clicked!')">Click Me!</button> -->
-
-	<div id="myElement">
-		Ini adalah elemen
-	</div>
-
-	<button id="login">Ini Button Login</button>
-
-	<button onclick="alert('button clicked!')">Click me</button>
-
 	<script>
-		let element = document.getElementById('myElement');
-		let newDiv = document.createElement('div');
-		newDiv.innerHTML = 'Ini div baru';
-		element.appendChild(newDiv);
-		element.style.backgroundColor = 'blue';
-
-		document.getElementById('login').addEventListener('click', function () {
-			alert('ok login berhasil!');
-		});
+		function profile() {
+			alert("Data berhasil disimpan");
+		}
 	</script>
-
-    
-    <!-- <script src="script.js"></script> -->
 </body>
 </html>
