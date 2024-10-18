@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="box-image">
+        <img src="https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png">
+    </div>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td>Muhammad Harisz Ryadi</td>
+        </tr>
+        <tr>
+            <td>NIM</td>
+            <td>:</td>
+            <td>D11176083</td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td>:</td>
+            <td>Jakarta</td>
+        </tr>
+        <tr>
+            <td>Hobi</td>
+            <td>:</td>
+            <td>
+                <ul>
+                    <li>Basket</li>
+                    <li>Hiking</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <button id="submit" onclick="profile();">Simpan</button>
+
+    <!-- <button id="myButton">Click me</button>
+
+    <button onclick="alert('Button clicked!')">Click Me!</button> -->
+
+	<div id="myElement">
+		Ini adalah elemen
+	</div>
+
+	<button id="login">Ini Button Login</button>
+
+	<button onclick="alert('button clicked!')">Click me</button>
+
+	<script>
+		let element = document.getElementById('myElement');
+		let newDiv = document.createElement('div');
+		newDiv.innerHTML = 'Ini div baru';
+		element.appendChild(newDiv);
+		element.style.backgroundColor = 'blue';
+
+		document.getElementById('login').addEventListener('click', function () {
+			alert('ok login berhasil!');
+		});
+	</script>
+
+    
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
