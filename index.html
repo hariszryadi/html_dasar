@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contoh CSS</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contoh CSS</title>
 	<style>
 		body {
-			display: flex;                /* Mengaktifkan Flexbox */
-			flex-direction: column;       /* Mengatur elemen dalam kolom */
-			justify-content: center;      /* Mengatur posisi horizontal ke tengah */
-			align-items: center;          /* Mengatur posisi vertikal ke tengah */
-			height: 100vh;               /* Menggunakan tinggi viewport */
-			margin: 0;                   /* Menghilangkan margin default */
-			background-color: #54b739af;   /* Warna latar belakang */
+			display: flex;
+			/* Mengaktifkan Flexbox */
+			flex-direction: column;
+			/* Mengatur elemen dalam kolom */
+			justify-content: center;
+			/* Mengatur posisi horizontal ke tengah */
+			align-items: center;
+			/* Mengatur posisi vertikal ke tengah */
+			height: 100vh;
+			/* Menggunakan tinggi viewport */
+			margin: 0;
+			/* Menghilangkan margin default */
+			background-color: #54b739af;
+			/* Warna latar belakang */
 		}
+
 		table {
-			width: 40%;                   /* Lebar tabel */
-			background-color: #bff9afaf;      /* Warna latar belakang tabel */
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Bayangan tabel */
+			width: 40%;
+			/* Lebar tabel */
+			background-color: #bff9afaf;
+			/* Warna latar belakang tabel */
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+			/* Bayangan tabel */
 		}
+
 		#box-image {
-			display: flex; /* Mengaktifkan Flexbox */
-			justify-content: center; /* Mengatur posisi horizontal */
-			align-items: center; /* Mengatur posisi vertikal */
-			margin-bottom: 20px; /* Jarak antara gambar dan tabel */
+			display: flex;
+			/* Mengaktifkan Flexbox */
+			justify-content: center;
+			/* Mengatur posisi horizontal */
+			align-items: center;
+			/* Mengatur posisi vertikal */
+			margin-bottom: 20px;
+			/* Jarak antara gambar dan tabel */
 		}
+
 		img {
-			border: 5px solid #ddd; /* Menambahkan border */
-			border-radius: 15px;    /* Sudut membulat */
-			padding: 6px;          /* Ruang di sekitar gambar */
-			width: 250px; 
-			height: auto;           /* Mengatur tinggi otomatis */
+			border: 5px solid #ddd;
+			/* Menambahkan border */
+			border-radius: 15px;
+			/* Sudut membulat */
+			padding: 6px;
+			/* Ruang di sekitar gambar */
+			width: 250px;
+			height: auto;
+			/* Mengatur tinggi otomatis */
 		}
 
 		#submit {
@@ -43,38 +65,41 @@
 		}
 	</style>
 </head>
+
 <body>
-    <div id="box-image">
-        <img src="https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png">
-    </div>
-    <table border="1" cellpadding="5" cellspacing="0">
-        <tr>
-            <td>Nama</td>
-            <td>:</td>
-            <td>Muhammad Harisz Ryadi</td>
-        </tr>
-        <tr>
-            <td>NIM</td>
-            <td>:</td>
-            <td>D11176083</td>
-        </tr>
-        <tr>
-            <td>Alamat</td>
-            <td>:</td>
-            <td>Jakarta</td>
-        </tr>
-        <tr>
-            <td>Hobi</td>
-            <td>:</td>
-            <td>
-                <ul>
-                    <li>Basket</li>
-                    <li>Hiking</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-    <button id="submit" onclick="profile();">Simpan</button>
+	<div id="box-image">
+		<img
+			src="https://static.vecteezy.com/system/resources/previews/019/896/008/original/male-user-avatar-icon-in-flat-design-style-person-signs-illustration-png.png">
+	</div>
+
+	<table border="1" cellpadding="5" cellspacing="0">
+		<tr>
+			<td>Nama</td>
+			<td>:</td>
+			<td>Muhammad Harisz Ryadi</td>
+		</tr>
+		<tr>
+			<td>NIM</td>
+			<td>:</td>
+			<td>D11176083</td>
+		</tr>
+		<tr>
+			<td>Alamat</td>
+			<td>:</td>
+			<td>Jakarta</td>
+		</tr>
+		<tr>
+			<td>Hobi</td>
+			<td>:</td>
+			<td>
+				<ul>
+					<li>Basket</li>
+					<li>Hiking</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<button id="submit" onclick="profile();">Simpan</button>
 
 	<button>Ini Button Testing</button>
 
@@ -84,4 +109,5 @@
 		}
 	</script>
 </body>
+
 </html>
